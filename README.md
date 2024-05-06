@@ -15,12 +15,7 @@ https://user-images.githubusercontent.com/37583039/219359191-7988e0dc-b1a4-43cc-
 
 To run agent:
 ```
-python run_agent.py --verbose
-```
-
-To train agent (not required as trained agent has been uploaded):
-```
-python train_agent.py --overwrite --verbose
+python main.py
 ```
 
 We use the lunar lander implementation from [gymnasium](https://gymnasium.farama.org). For the implementation of the actor-critic algorithm we loosely follow <a href="#ref_1">Ref. [1]</a>. While for the implementation of deep Q-learning we follow <a href="#ref_2">Ref. [2]</a>, for the implementation of double deep Q-learning we follow <a href="#ref_3">Ref. [3]</a>.
