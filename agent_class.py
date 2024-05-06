@@ -75,12 +75,10 @@ class agent_base():
        
         self.set_initialization_parameters(parameters=parameters)
         default_parameters = self.get_default_parameters()
-        # for all parameters not set by the input dictionary, add the 
-        # respective default parameter
+       
         parameters = self.merge_dictionaries(dict1=parameters,
                                              dict2=default_parameters)
         # set all parameters (except for those already set above in 
-        # self.set_initialization_parameters())
         self.set_parameters(parameters=parameters)
         #
         # for future reference, each instance of a class carries a copy of 
