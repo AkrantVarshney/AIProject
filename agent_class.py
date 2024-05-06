@@ -279,7 +279,7 @@ class agent_base():
         if len(list_of_returns) < self.nSolvingEpisodes:
             return False, 0., 0.
         recentReturns = np.array(list_of_returns)
-        recentReturns = recentReturns[-self.n_solving_episodes:]
+        recentReturns = recentReturns[-self.nSolvingEpisodes:]
         minimal_return = np.min(recentReturns)
         retMeanurn = np.mean(recentReturns)
         if minimal_return > self.solvingMinThreshold:
@@ -335,7 +335,7 @@ class agent_base():
                     "| (last {0} episodes) |\n"
                 "|---------------------------------------------------"
                     "--------------------")
-            print(training_progress_header.format(self.n_solving_episodes))
+            print(training_progress_header.format(self.nSolvingEpisodes))
             #
             status_progress_string = (
                         "| {0: 7d} |   {1: 10.3f}    |     "

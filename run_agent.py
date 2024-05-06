@@ -11,7 +11,7 @@ import h5py
 import agent_class as agent
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--f',type=str, default='myAgent',
+parser.add_argument('--f',type=str, default='my_agent',
         help='input/output filename (suffix will be added by script)')
 parser.add_argument('--N',type=int, default=1000,
         help='number of simulations')
